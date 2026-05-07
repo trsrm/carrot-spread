@@ -1,0 +1,26 @@
+.DS_Store
+*.tmp
+*.bak
+*.swp
+
+# Local editor files
+.vscode/
+.idea/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Dependencies/build artifacts if tools/scripts are added
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+*.pyc
+
+# Optional local scratch
+_local/
+.dist/
+.codex/hooks.json

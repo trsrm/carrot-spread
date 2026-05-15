@@ -17,7 +17,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 
 ## Outputs
 
-- Preserved raw sources under `10-source/`
+- Organized notes and preserved raw sources under `10-notes/`
 - Updated canonical notes in `20-knowledge/`, `30-projects/`, or `40-systems/`
 - Updated indexes
 - Updated log
@@ -40,7 +40,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
    - possible duplicate/overlap signals
    - stale, contradictory, or time-sensitive claims
    - proposed canonical note updates
-4. Preserve raw material in `10-source/`.
+4. Preserve raw material in `10-notes/`.
    - Use short descriptive kebab-case filenames.
    - Do not add leading date prefixes to source filenames.
    - Preserve capture/import dates in frontmatter, inbox processed markers, and the knowledge log.
@@ -73,3 +73,4 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 - Use `confidence: medium` for plausible interpretation.
 - Use `confidence: low` for memory, hypotheses, rough notes, or AI inference.
 - Do not copy high-sensitivity content into low-sensitivity summaries.
+- Write metadata file references as quoted Obsidian wikilinks.

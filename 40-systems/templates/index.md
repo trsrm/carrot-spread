@@ -11,8 +11,8 @@ updated: 2026-05-06
 tags:
   - templates
 related:
-  - ../../_templates/
-  - ../prompts/index.md
+  - "[[_templates]]"
+  - "[[40-systems/prompts/index]]"
 ---
 
 # System Templates

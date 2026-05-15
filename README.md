@@ -7,7 +7,7 @@ Markdown-first personal knowledge base for human and AI collaboration. Think of 
 ## Operating model
 
 - Human captures raw thoughts and documents in month folders under `00-inbox/`.
-- Agents preserve sources in `10-source/`.
+- Agents preserve organized notes and sources in `10-notes/`.
 - Agents maintain durable knowledge in `20-knowledge/`.
 - Active projects live in `30-projects/`.
 - Reusable workflows and prompts live in `40-systems/`.
@@ -21,6 +21,7 @@ Markdown-first personal knowledge base for human and AI collaboration. Think of 
 Use `.agents/skills/` for task-specific procedures:
 
 - `process-inbox` — process new captured material from `00-inbox/YYYY-MM/`.
+- `process-notes` — reconcile recent or uncommitted manual edits in `10-notes/`.
 - `maintain-knowledge` — update, reconcile, and source-check durable knowledge pages.
 - `deduplicate-notes` — resolve duplicate or overlapping notes.
 - `weekly-review` — review recent changes, open questions, and next actions.

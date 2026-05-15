@@ -4,7 +4,7 @@ type: checklist
 domain: systems
 status: active
 source:
-  - ../../10-source/articles/7-commit-message-rules.md
+  - "[[10-notes/articles/7-commit-message-rules]]"
 confidence: high
 sensitivity: low
 created: 2026-05-07
@@ -14,7 +14,7 @@ tags:
   - commits
   - writing
 related:
-  - index.md
+  - "[[40-systems/checklists/index]]"
 ---
 
 # Commit Message Rules

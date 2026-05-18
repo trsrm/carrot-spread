@@ -2,7 +2,9 @@
 
 # Carrot Spread
 
-This repository is a Markdown-first personal knowledge base for human and AI collaboration.
+This project is a Markdown-first personal knowledge base for human and AI collaboration.
+
+Think of it as inspired by Andrew Karpathy’s LLM-oriented wiki idea, but shifted toward more practical notes and personal brain workflows, with a custom structure, Graphify integration for better navigation by both LLMs and people, and a set of useful agent skills.
 
 ## Operating model
 

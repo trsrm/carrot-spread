@@ -1,4 +1,4 @@
-![Carrot Spread Logo](https://i.ibb.co/LXx5DPjq/photo-2026-05-07-23-54-29.jpg)
+<img src="https://i.ibb.co/LXx5DPjq/photo-2026-05-07-23-54-29.jpg" alt="Carrot Spread Logo" width="200">
 
 # Carrot Spread
 

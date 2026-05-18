@@ -1,8 +1,12 @@
 # Notes
 
-Organized notes and preserved raw sources live here.
+Organized editable notes and source-derived material live here.
 
-Do not replace original notes or preserved raw sources with summaries. Processed knowledge belongs in `20-knowledge/`, `30-projects/`, or `40-systems/`.
+`10-notes/` is allowed to change. Humans mostly edit these notes, and agents may also clean formatting, fix small errors, add metadata/backlinks, flag problems, or maintain the note when asked.
+
+Do not replace original human notes with lossy LLM summaries. When processing inbox material, keep the captured wording, examples, facts, and context nearly as-is. Compiled LLM-maintained knowledge belongs in `20-knowledge/`, `30-projects/`, or `40-systems/`.
+
+Raw source-of-record capture lives in `00-inbox/`; do not rewrite it during normal processing unless the human explicitly asks.
 
 ## Naming
 

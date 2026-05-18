@@ -1,5 +1,5 @@
 ---
-name: process-inbox
+name: brain-process-inbox
 description: Process new raw notes, documents, and thoughts from month folders under 00-inbox into the personal knowledge base.
 ---
 
@@ -17,7 +17,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 
 ## Outputs
 
-- Organized notes and preserved raw sources under `10-notes/`
+- Organized editable notes and source-derived material under `10-notes/`
 - Updated canonical notes in `20-knowledge/`, `30-projects/`, or `40-systems/`
 - Updated indexes
 - Updated log
@@ -40,9 +40,12 @@ Convert raw captured material into durable, linked knowledge with minimal human 
    - possible duplicate/overlap signals
    - stale, contradictory, or time-sensitive claims
    - proposed canonical note updates
-4. Preserve raw material in `10-notes/`.
+4. Create or update organized material in `10-notes/` by preserving the captured content nearly as-is.
    - Use short descriptive kebab-case filenames.
    - Do not add leading date prefixes to source filenames.
+   - Preserve the human's wording, examples, and context as much as practical.
+   - Light cleanup is allowed: structure, formatting, minor spelling fixes, broken Markdown, metadata, backlinks, and short agent notes that flag clear issues.
+   - Do not rewrite captured content into LLM prose and do not replace it with a summary.
    - Preserve capture/import dates in frontmatter, inbox processed markers, and the knowledge log.
 5. Search existing canonical notes before creating new pages.
 6. Update existing notes when possible.
@@ -62,7 +65,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 - Keep the inbox easy for the human: do not require extra categorization before processing.
 - Prefer updating existing knowledge/project/system notes over creating new pages.
 - If destination is unclear after a reasonable search, add the item to `.generated/unresolved.md`.
-- Write extraction notes in the original language of the source material. If a source mixes languages, follow the dominant language and preserve key quoted terms as written.
+- Write canonical notes in the original language of the source material. If a source mixes languages, follow the dominant language and preserve key quoted terms as written.
 
 ## Metadata judgment
 

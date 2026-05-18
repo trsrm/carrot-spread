@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create missing personal-brain scaffold directories and placeholders.
+"""Create missing knowledge-base scaffold directories and placeholders.
 
 The script is intentionally conservative: it creates missing directories and
 placeholder files only. It never overwrites existing content.
@@ -16,16 +16,16 @@ CURRENT_INBOX_MONTH = f"00-inbox/{date.today():%Y-%m}"
 
 DIRECTORIES = [
     CURRENT_INBOX_MONTH,
-    "10-source/articles",
-    "10-source/documents",
-    "10-source/conversations",
-    "10-source/meetings",
-    "10-source/emails",
-    "10-source/screenshots",
-    "10-source/medical",
-    "10-source/finance",
-    "10-source/work",
-    "10-source/family",
+    "10-notes/articles",
+    "10-notes/documents",
+    "10-notes/conversations",
+    "10-notes/meetings",
+    "10-notes/emails",
+    "10-notes/screenshots",
+    "10-notes/medical",
+    "10-notes/finance",
+    "10-notes/work",
+    "10-notes/family",
     "20-knowledge/life",
     "20-knowledge/work",
     "20-knowledge/health",
@@ -40,10 +40,21 @@ DIRECTORIES = [
     "40-systems/checklists",
     "40-systems/decision-frameworks",
     "40-systems/templates",
-    ".agents/skills/process-inbox",
-    ".agents/skills/maintain-knowledge",
-    ".agents/skills/deduplicate-notes",
-    ".agents/skills/weekly-review",
+    ".agents/skills/brain-process-inbox",
+    ".agents/skills/brain-process-notes",
+    ".agents/skills/brain-maintain-knowledge",
+    ".agents/skills/brain-weekly-review",
+    ".agents/skills/brain-activate-project",
+    ".agents/skills/brain-refresh-research",
+    ".agents/skills/brain-professional-coach",
+    ".agents/skills/brain-health-coach",
+    ".agents/skills/brain-family-coach",
+    ".agents/skills/brain-financial-coach",
+    ".agents/skills/brain-decision-coach",
+    ".agents/skills/brain-stuck-mode",
+    ".agents/skills/brain-personal-coach",
+    ".agents/skills/brain-risk-radar",
+    ".agents/skills/brain-project-radar",
     "_templates",
     ".generated/indexes",
     ".generated/graphify",
@@ -54,16 +65,16 @@ DIRECTORIES = [
 
 PLACEHOLDERS = [
     f"{CURRENT_INBOX_MONTH}/.gitkeep",
-    "10-source/articles/.gitkeep",
-    "10-source/documents/.gitkeep",
-    "10-source/conversations/.gitkeep",
-    "10-source/meetings/.gitkeep",
-    "10-source/emails/.gitkeep",
-    "10-source/screenshots/.gitkeep",
-    "10-source/medical/.gitkeep",
-    "10-source/finance/.gitkeep",
-    "10-source/work/.gitkeep",
-    "10-source/family/.gitkeep",
+    "10-notes/articles/.gitkeep",
+    "10-notes/documents/.gitkeep",
+    "10-notes/conversations/.gitkeep",
+    "10-notes/meetings/.gitkeep",
+    "10-notes/emails/.gitkeep",
+    "10-notes/screenshots/.gitkeep",
+    "10-notes/medical/.gitkeep",
+    "10-notes/finance/.gitkeep",
+    "10-notes/work/.gitkeep",
+    "10-notes/family/.gitkeep",
 ]
 
 

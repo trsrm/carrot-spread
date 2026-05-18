@@ -14,7 +14,8 @@ LINK_RE = re.compile(r"\[[^\]]+\]\(([^)]+\.md)(?:#[^)]+)?\)")
 
 SKIP_PREFIXES = (
     "00-inbox/",
-    "10-source/",
+    "10-notes/",
+    "30-projects/_template/",
     "_archive/",
     ".agents/",
     ".generated/",

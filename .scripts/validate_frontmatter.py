@@ -24,7 +24,7 @@ REQUIRED_FIELDS = [
 ]
 
 CANONICAL_PREFIXES = (
-    "10-source/",
+    "10-notes/",
     "20-knowledge/",
     "30-projects/",
     "40-systems/",

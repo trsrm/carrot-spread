@@ -6,7 +6,7 @@
 
 ## People / stakeholders
 
-Include anyone relevant: collaborators, reviewers, clients, users, approvers, or future you.
+Include anyone relevant: family, contractors, coworkers, clients, users, collaborators, approvers, or future you.
 
 ## Scope
 

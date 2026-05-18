@@ -1,27 +1,82 @@
 ---
-id: person-short-name
-type: entity
+id: person-slug
+type: person
 domain: general
 status: active
 source: []
 confidence: medium
-sensitivity: medium
+sensitivity: high
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
-tags: []
-related: []
+tags:
+  - person
+related:
+  - "[[20-knowledge/people/index]]"
+interaction_log: "[[10-notes/people/person-slug-interaction-log]]"
 ---
 
-# Person Name
+# Імʼя Людини
 
-## Role / relation
+## Роль / звʼязок
 
-## Context
+- TODO
 
-## Communication preferences
+## Короткий контекст
 
-## Relevant history
+- TODO
 
-## Related projects
+## Важливі дати
 
-## Notes
+| Дата | Подія | Джерело / впевненість |
+| --- | --- | --- |
+| YYYY-MM-DD |  |  |
+
+## Вподобання
+
+### Їжа і напої
+
+- TODO
+
+### Подарунки і речі
+
+- TODO
+
+### Хобі й теми розмов
+
+- TODO
+
+### Не подобається / уникати
+
+- TODO
+
+## Комунікація
+
+- Як краще домовлятися:
+- Що підтримує:
+- Що може дратувати або виснажувати:
+- Чутливі теми:
+
+## Здоровʼя / навчання / побут
+
+Заповнювати лише коли це справді корисно. Для медичних, дитячих, фінансових або сімейно-чутливих деталей тримати `sensitivity: high` і додавати джерела.
+
+- TODO
+
+## Важливі нотатки
+
+- TODO
+
+## Активні теми
+
+- TODO
+
+## Історія взаємодій
+
+- Детальний лог: [[10-notes/people/person-slug-interaction-log]]
+- У цьому профілі лишати тільки актуальний підсумок, не повну хронологію.
+
+## Джерела і якість даних
+
+- Сирі джерела зберігати окремо й посилатися на них у `source`.
+- Не зливати суперечливі твердження мовчки; позначати невпевненість.
+- Припущення позначати явно.

@@ -1,5 +1,5 @@
 ---
-name: weekly-review
+name: brain-weekly-review
 description: Review recent changes, unresolved questions, active projects, stale notes, and suggested next actions.
 ---
 

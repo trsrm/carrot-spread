@@ -14,7 +14,19 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX_DIR = ROOT / ".generated" / "indexes"
-DOMAINS = ["life", "work", "health", "finance", "car", "learning", "ai", "general"]
+DOMAINS = ["life", "work", "health", "family", "finance", "car", "learning", "ai", "general"]
+SKIP_NAMES = {"AGENTS.md", "README.md"}
+SKIP_PREFIXES = (
+    ".agents/",
+    ".git/",
+    ".generated/",
+    ".obsidian/",
+    ".scripts/",
+    "00-inbox/",
+    "30-projects/_template/",
+    "_archive/",
+    "_templates/",
+)
 
 
 @dataclass(frozen=True)
@@ -58,7 +70,7 @@ def load_notes() -> list[Note]:
     notes: list[Note] = []
     for path in sorted(ROOT.rglob("*.md")):
         rel = relpath(path)
-        if rel.startswith((".git/", ".obsidian/", "00-inbox/", ".generated/")):
+        if path.name in SKIP_NAMES or any(rel.startswith(prefix) for prefix in SKIP_PREFIXES):
             continue
         text = path.read_text(encoding="utf-8")
         notes.append(
@@ -83,13 +95,20 @@ def write(path: Path, content: str) -> None:
 
 
 def write_project_indexes(notes: list[Note]) -> None:
-    project_notes = [
+    project_candidates = [
         note
         for note in notes
         if note.rel.startswith("30-projects/")
         and not note.rel.startswith("30-projects/_template/")
         and note.path.name in {"index.md", "00-context.md"}
     ]
+    by_project_dir: dict[Path, list[Note]] = {}
+    for note in project_candidates:
+        by_project_dir.setdefault(note.path.parent, []).append(note)
+    project_notes = []
+    for project_dir in sorted(by_project_dir):
+        candidates = by_project_dir[project_dir]
+        project_notes.append(next((note for note in candidates if note.path.name == "index.md"), candidates[0]))
 
     def row(note: Note) -> str:
         status = note.fields.get("status", "")
@@ -126,14 +145,14 @@ def write_open_questions(notes: list[Note]) -> None:
         in_section = False
         for line in text.splitlines():
             stripped = line.strip()
-            if stripped.lower() == "## open questions":
+            if stripped.lower() in {"## open questions", "## відкриті питання"}:
                 in_section = True
                 continue
             if in_section and stripped.startswith("## "):
                 break
             if in_section and stripped.startswith("- "):
                 question = stripped[2:].strip()
-                if question.lower().rstrip(".") == "none":
+                if question.lower().rstrip(".") in {"none", "немає"}:
                     continue
                 if question:
                     rows.append(f"| {note.fields.get('updated', '')} | {question} | [{note.rel}](../../{note.rel}) |  | open |")

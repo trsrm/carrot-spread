@@ -1,4 +1,0 @@
-interface:
-  display_name: "Process Notes"
-  short_description: "Detect manual edits in notes and reconcile them into durable knowledge."
-  default_prompt: "Process recent or uncommitted changes in 10-notes and update the related knowledge pages, indexes, logs, and maintenance reports."

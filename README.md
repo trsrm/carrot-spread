@@ -1,8 +1,8 @@
-![Carrot Spread Logo](https://i.ibb.co/1tr6Ynyp/photo-2026-05-07-23-54-29.jpg)
+![Carrot Spread Logo](https://i.ibb.co/LXx5DPjq/photo-2026-05-07-23-54-29.jpg)
 
 # Carrot Spread
 
-Markdown-first personal knowledge base for human and AI collaboration. Think of it as a personal brain-dump, but with structure and agents to help you organize, synthesize, and act on your knowledge.
+This repository is a Markdown-first personal knowledge base for human and AI collaboration.
 
 ## Operating model
 
@@ -20,11 +20,22 @@ Markdown-first personal knowledge base for human and AI collaboration. Think of 
 
 Use `.agents/skills/` for task-specific procedures:
 
-- `process-inbox` — process new captured material from `00-inbox/YYYY-MM/`.
-- `process-notes` — reconcile recent or uncommitted manual edits in `10-notes/`.
-- `maintain-knowledge` — update, reconcile, and source-check durable knowledge pages.
-- `deduplicate-notes` — resolve duplicate or overlapping notes.
-- `weekly-review` — review recent changes, open questions, and next actions.
+- `brain-process-inbox` — process new captured material from `00-inbox/YYYY-MM/`.
+- `brain-process-notes` — reconcile recent or uncommitted edits in `10-notes/`.
+- `brain-maintain-knowledge` — update, reconcile, source-check, deduplicate, lint durable knowledge pages, and conservatively surface cleanup or archive candidates.
+- `brain-weekly-review` — review recent changes, open questions, and next actions.
+
+Guidance skills use two roles:
+
+- Coach skills help act on a known domain, situation, or decision.
+- Radar skills proactively detect hidden cross-domain issues.
+
+Current guidance skills:
+
+- `brain-personal-coach` — broad personal guidance, weekly priorities, proactive personal scans, patterns, and next actions.
+- `brain-health-coach`, `brain-financial-coach`, `brain-family-coach`, `brain-professional-coach`, and `brain-decision-coach` — domain-specific guidance.
+- `brain-risk-radar` — stale, sensitive, contradictory, high-impact, or unsafe-to-act-on claims across domains.
+- `brain-project-radar` — notes that imply active projects but are not tracked in `30-projects`.
 
 Skills should contain procedures that an agent can run. General notes, prompts, and evaluation material belong in `40-systems/` or domain folders, not in skills.
 

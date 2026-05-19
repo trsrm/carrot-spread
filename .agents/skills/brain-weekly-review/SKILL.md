@@ -22,11 +22,10 @@ Keep the personal brain useful and current.
 
 ## Output
 
-Create or update:
+- Return the structured weekly review in chat.
+- Separate suggested follow-up updates from actions already taken.
+- After the human responds or asks for follow-up, update trackers, indexes, project state, `20-knowledge/log.md`, or specific contextual artifacts when the response creates durable state.
 
-```text
-.generated/reports/weekly-review-YYYY-MM-DD.md
-```
 
 ## Review sections
 

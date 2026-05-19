@@ -18,7 +18,8 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 ## Outputs
 
 - Organized editable notes and source-derived material under `10-notes/`
-- Updated canonical notes in `20-knowledge/`, `30-projects/`, or `40-systems/`
+- Updated canonical notes in `20-knowledge/` or active project contexts in `30-projects/`
+- Updated person profiles in `20-knowledge/people/` when captures contain stable people facts, preferences, needs, communication patterns, relationship or other similar context
 - Updated indexes
 - Updated log
 - Updated unresolved/duplicate/stale-claim reports if needed
@@ -40,6 +41,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
    - possible duplicate/overlap signals
    - stale, contradictory, or time-sensitive claims
    - proposed canonical note updates
+   - affected people profiles and whether they need concise updates
 4. Create or update organized material in `10-notes/` by preserving the captured content nearly as-is.
    - Use short descriptive kebab-case filenames.
    - Do not add leading date prefixes to source filenames.

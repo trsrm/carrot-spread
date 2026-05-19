@@ -26,6 +26,7 @@ DIRECTORIES = [
     "10-notes/finance",
     "10-notes/work",
     "10-notes/family",
+    "10-notes/systems",
     "20-knowledge/life",
     "20-knowledge/work",
     "20-knowledge/health",
@@ -34,12 +35,9 @@ DIRECTORIES = [
     "20-knowledge/learning",
     "20-knowledge/people",
     "20-knowledge/ideas",
+    "20-knowledge/food",
+    "20-knowledge/systems",
     "30-projects/_template",
-    "40-systems/workflows",
-    "40-systems/prompts",
-    "40-systems/checklists",
-    "40-systems/decision-frameworks",
-    "40-systems/templates",
     ".agents/skills/brain-process-inbox",
     ".agents/skills/brain-process-notes",
     ".agents/skills/brain-maintain-knowledge",
@@ -75,6 +73,7 @@ PLACEHOLDERS = [
     "10-notes/finance/.gitkeep",
     "10-notes/work/.gitkeep",
     "10-notes/family/.gitkeep",
+    "10-notes/systems/.gitkeep",
 ]
 
 

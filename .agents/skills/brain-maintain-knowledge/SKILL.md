@@ -1,6 +1,6 @@
 ---
 name: brain-maintain-knowledge
-description: Maintain durable knowledge pages using raw sources, organized notes, canonical notes, indexes, logs, backlinks, deduplication, and conservative cleanup radar.
+description: Maintain durable knowledge pages using raw sources, organized notes, canonical notes, indexes, logs, backlinks, deduplication, restructure recommendations, and conservative cleanup radar.
 ---
 
 # Maintain Knowledge Skill
@@ -19,6 +19,8 @@ This repo follows a source-preserving knowledge maintenance pattern:
 
 ## Default pass
 
+Important: Each operation is independent. A clean result from one operation must not be used to skip another operation.
+
 When invoked without a specific target, run all maintenance operations in a conservative sequence:
 
 1. Read the main navigation and maintenance surfaces:
@@ -29,18 +31,20 @@ When invoked without a specific target, run all maintenance operations in a cons
    - `.generated/graphify/GRAPH_REPORT.md` if present
 2. Run `Source Check` for sensitive, important, stale, or high-impact claims surfaced by indexes, logs, generated reports, or Graphify.
 3. Run `Lint` across the maintained knowledge surfaces.
-4. Run `Navigation Repair`, applying small local fixes only when the fix is clear and source-preserving.
-5. Run `Deduplication`, resolving duplicate or overlapping notes while preserving source traceability.
-6. Run `Restructure Options`, returning advisory before/after options in chat.
-7. Run `Archive Review`, returning archive candidates and rationale in chat.
-8. Run `Cleanup Radar`, returning ranked cleanup candidates in chat.
-9. Ask the human only when a decision affects broad folder moves, non-trivial duplicate merges, source interpretation, or archival of raw/source material.
+4. Run `Domain Placement Audit` across `10-notes/`, `20-knowledge/`, and active `30-projects/` contexts.
+5. Run `Navigation Repair`, applying small local fixes only when the fix is clear and source-preserving.
+6. Run `Deduplication`, resolving duplicate or overlapping notes while preserving source traceability.
+7. Run `Restructure Options`, returning advisory before/after options in chat.
+8. Run `Archive Review`, returning archive candidates and rationale in chat.
+9. Run `Cleanup Radar`, returning ranked cleanup candidates in chat.
+10. Ask the human only when a decision affects broad folder moves, non-trivial duplicate merges, source interpretation, or archival of raw/source material.
 
 Default output:
 
 - Changes made
 - Issues found but not changed
 - Source checks
+- Domain placement findings
 - Duplicate findings
 - Restructure options
 - Archive candidates
@@ -68,6 +72,7 @@ Look for:
 - missing source references
 - unresolved questions
 - plain path file references
+- mismatches between file path, frontmatter `domain`, source-folder category, and durable subject
 
 ### Navigation Repair
 
@@ -76,12 +81,18 @@ Look for:
 - Use generated artifacts such as orphan reports as hints, not canonical truth.
 - Update navigation only when it improves findability.
 
+### Domain Placement Audit
+
+- Always check whether files live in the right domain.
+- Compare path, frontmatter `domain`, source folders, title, tags, and nearby index ownership.
+- Surface concrete before/after move options with affected files.
+
 ### Restructure Options
 
-- Advisory only by default.
-- Propose folder or page restructuring when repeated friction, crowding, misplaced notes, or unclear canonical ownership appears.
-- Return before/after structure, rationale, affected notes, and risks in chat.
-- Do not move files or rewrite links unless explicitly asked.
+- Propose folder or page restructuring when repeated friction, crowding, misplaced notes, overlapping folders or files, or unclear canonical ownership appears.
+- Consider move, rename, merge and split recommendations.
+- Return concise before/after structure, rationale and affected notes or folders.
+- Do not move/rename/merge/split unless explicitly asked.
 
 ### Archive Review
 

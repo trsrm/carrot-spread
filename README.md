@@ -12,7 +12,6 @@ Think of it as inspired by Andrew Karpathy’s LLM-oriented wiki idea, but shift
 - Agents preserve organized notes and sources in `10-notes/`.
 - Agents maintain durable knowledge in `20-knowledge/`.
 - Active projects live in `30-projects/`.
-- Reusable workflows and prompts live in `40-systems/`.
 - Repo-local agent skills live in `.agents/skills/`.
 - Generated indexes and graphs live in `.generated/`.
 
@@ -58,4 +57,16 @@ Current guidance skills:
 - `brain-risk-radar` — stale, sensitive, contradictory, high-impact, or unsafe-to-act-on claims across domains.
 - `brain-project-radar` — notes that imply active projects but are not tracked in `30-projects`.
 
-Skills should contain procedures that an agent can run. General notes, prompts, and evaluation material belong in `40-systems/` or domain folders, not in skills.
+Skills should contain procedures that an agent can run. General notes, prompts, and evaluation material belong in domain folders, not in skills.
+
+## User config
+
+Optional user preferences live in `brain.config.yml` at the repository root.
+
+Current supported setting:
+
+```yaml
+preferred_language: uk
+```
+
+Agents answer in the current chat language when it is clear; otherwise they use `preferred_language`. Persisted notes and source-derived synthesis still follow the source or note language.

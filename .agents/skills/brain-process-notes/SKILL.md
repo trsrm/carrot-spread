@@ -19,7 +19,7 @@ This complements `brain-process-inbox`: inbox handles new capture; this skill ha
 
 ## Outputs
 
-- Updated canonical notes in `20-knowledge/`, `30-projects/`, or `40-systems/` when durable facts changed.
+- Updated canonical notes in `20-knowledge/` or active project contexts in `30-projects/` when durable facts changed.
 - Updated indexes where navigation changes.
 - Updated `20-knowledge/log.md`.
 - Updated `.generated/unresolved.md`, `.generated/duplicates.md`, or `.generated/stale-claims.md` when needed.
@@ -39,7 +39,7 @@ This complements `brain-process-inbox`: inbox handles new capture; this skill ha
    - formatting/noise
    - contradiction, stale claim, or unresolved ambiguity
 3. Find related canonical pages.
-   - Search `20-knowledge/`, `30-projects/`, and `40-systems/`.
+   - Search `20-knowledge/` and `30-projects/`.
    - Prefer updating existing pages over creating new ones.
    - Treat `10-notes/` as editable organized material, not immutable raw capture.
    - Do not replace useful context with lossy summaries.

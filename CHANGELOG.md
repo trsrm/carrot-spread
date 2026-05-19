@@ -1,5 +1,14 @@
 # Changelog
 
+## v0.4 (2026-05-19)
+
+- Added domain placement auditing to `brain-maintain-knowledge` so maintenance checks path, frontmatter domain, source-folder category, title, tags, and index ownership as independent signals.
+- Added root `brain.config.yml` support for user-level chat preferences such as `preferred_language`.
+- Merged the old `40-systems/` layer back into the main knowledge structure so durable system notes live under `10-notes/` or `20-knowledge/` instead of a separate top-level folder.
+- Updated core processing skills to target `20-knowledge/` and `30-projects/`, with people-profile handling in `brain-process-inbox`.
+- Changed `brain-weekly-review` to return the review in chat by default and persist follow-up changes only when they create durable state.
+- Refined `brain-maintain-knowledge` restructuring guidance for crowded, misplaced, overlapping, or unclear notes and folders.
+
 ## v0.3 (2026-05-18)
 
 - Introduced the namespaced `brain-*` skill framework, replacing the earlier generic skill names with clearer personal-brain workflows.

@@ -6,12 +6,20 @@ This repository is a personal Markdown knowledge base. The human captures and re
 
 - Preserve `00-inbox/` capture material unless the human explicitly asks otherwise.
 - `10-notes/` is editable organized material; clean or enrich it carefully when requested or clearly useful.
-- `20-knowledge/`, `30-projects/`, and `40-systems/` are compiled durable layers maintained by agents and reviewed by humans.
+- `20-knowledge/` is the compiled durable knowledge layer maintained by agents and reviewed by humans; `30-projects/` holds active project contexts.
 - Do not replace source material or organized notes with lossy summaries.
 - Prefer updating existing canonical notes over creating duplicates.
 - If unsure where something belongs, put it in `.generated/unresolved.md`.
 - Keep folders shallow; use metadata and backlinks for navigation.
 - The human reviews local diffs before committing.
+
+## User config
+
+- Check `brain.config.yml` in the repository root when present.
+- Explicit instructions in the current chat override `brain.config.yml`.
+- `brain.config.yml` overrides skill defaults for chat output preferences.
+- Answer in the current chat language when it is clear; otherwise use `preferred_language`.
+- Source-preservation rules still control the language of persisted notes and source-derived synthesis.
 
 ## Metadata guidelines
 
@@ -26,15 +34,21 @@ Source priority runs top to bottom:
 - `10-notes/` — organized editable notes and source-derived material
 - `20-knowledge/` — compiled durable knowledge
 - `30-projects/` — active project contexts
-- `40-systems/` — reusable prompts, workflows, checklists, tools
 - `.agents/skills/` — repo-local agent skills
 - `_templates/` — note templates
 - `.generated/` — generated indexes, reports, Graphify outputs; lower authority than notes
 - `_archive/` — inactive material
 
+## Persistence model
+
+- Chat is for interaction, advice, prioritization, and calls to action.
+- Persist durable facts, decisions, corrections, project state, open questions, stale claims, duplicate candidates, indexes, trackers, and meaningful logs.
+- Do not persist routine coaching or session-style reports by default.
+- When chat produces a durable consequence, update the right note, tracker, project page, or log instead of saving the chat response.
+
 ## Natural evolution
 
-Agents may create plain, lowercase top-level folders under `10-notes/`, `20-knowledge/`, or `40-systems/` when a repeated category becomes durable enough to reduce friction.
+Agents may create plain, lowercase top-level folders under `10-notes/` or `20-knowledge/` when a repeated category becomes durable enough to reduce friction.
 
 ## Local skills
 

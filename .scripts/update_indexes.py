@@ -14,7 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 INDEX_DIR = ROOT / ".generated" / "indexes"
-DOMAINS = ["life", "work", "health", "family", "finance", "car", "learning", "ai", "general"]
+DOMAINS = ["life", "work", "health", "family", "finance", "car", "learning", "systems", "food", "ai", "general"]
 SKIP_NAMES = {"AGENTS.md", "README.md"}
 SKIP_PREFIXES = (
     ".agents/",

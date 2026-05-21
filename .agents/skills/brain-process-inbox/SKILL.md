@@ -30,6 +30,7 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 2. Classify each item:
    - domain
    - type
+   - provenance
    - sensitivity
    - confidence
    - likely destination
@@ -71,6 +72,10 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 
 ## Metadata judgment
 
+- Use `origin: external` for digests or notes from someone else's article, book, course, lecture, video, recipe, official record, vendor page, professional guidance, or technical reference.
+- Use `origin: personal` for the human's own memories, reflections, beliefs, preferences, original work, personal records, practices, planning, or decisions.
+- Use `origin: mixed` when personal context or interpretation and external material both matter.
+- Use `origin_note` for a short provenance explanation, such as "personal memory and preference", "digest of an external article", or "personal interpretation of external research".
 - Use `sensitivity: high` for health, family, finance, legal, identity, personal documents, private work/client context, or anything harmful if exposed.
 - Use `sensitivity: medium` for personal preferences, non-public work methods, reusable prompts with business relevance, and private but low-risk research notes.
 - Use `sensitivity: low` for public concepts, public tools, public articles, and general learning notes.

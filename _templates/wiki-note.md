@@ -4,6 +4,8 @@ type: concept
 domain: general
 status: draft
 source: []
+origin: mixed
+origin_note: ""
 confidence: medium
 sensitivity: medium
 created: YYYY-MM-DD

@@ -4,6 +4,8 @@ type: source
 domain: general
 status: active
 source: original
+origin: mixed
+origin_note: ""
 confidence: high
 sensitivity: medium
 created: YYYY-MM-DD
@@ -16,7 +18,7 @@ related: []
 
 ## Source context
 
-- Origin:
+- Original author / source origin:
 - Date:
 - Author / speaker:
 - Imported by:

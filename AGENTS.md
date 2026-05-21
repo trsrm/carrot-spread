@@ -25,6 +25,9 @@ This repository is a personal Markdown knowledge base. The human captures and re
 
 - In frontmatter, use Obsidian wikilinks for file references in metadata fields.
 - Do not use filesystem traversal paths like `../../...` in metadata values.
+- In `10-notes/` and `20-knowledge/`, include `origin: personal | external | mixed` and a short natural `origin_note`.
+- `origin` means starting authorship: the human, an outside source, or both. A digest of someone else's work is `external`.
+- `origin_note` should be brief and human-readable, e.g. `"My family record"`, `"Article notes"`, `"My interpretation of external research"`.
 
 ## Structure
 
@@ -56,6 +59,7 @@ Agents may create plain, lowercase top-level folders under `10-notes/` or `20-kn
 - Use `brain-process-notes` for detecting recent or uncommitted manual edits in `10-notes/` and reconciling them into durable knowledge without requiring manual status fields.
 - Use `brain-maintain-knowledge` for reconciling, source-checking, updating, deduplicating, linting durable knowledge pages, and conservatively surfacing cleanup or archive candidates.
 - Use `brain-weekly-review` for periodic review of recent changes, open questions, and next actions.
+- Use `brain-add-person` for creating or updating people profiles in `20-knowledge/people/` while preserving detailed source notes in `10-notes/people/`.
 
 ## Graphify
 

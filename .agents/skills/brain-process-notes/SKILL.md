@@ -35,6 +35,7 @@ This complements `brain-process-inbox`: inbox handles new capture; this skill ha
    - durable fact addition
    - correction or deletion
    - preference or decision
+   - provenance change or missing
    - source-only edit
    - formatting/noise
    - contradiction, stale claim, or unresolved ambiguity
@@ -61,6 +62,7 @@ This complements `brain-process-inbox`: inbox handles new capture; this skill ha
 
 - The human should not need to add metadata, dates, tags, or agent prompts for this workflow.
 - Use file modification time and git status as the implicit task queue.
+- If the human changes a note in a way that changes authorship mix, update `origin` and `origin_note` along with the durable knowledge.
 - If a change looks like a direct source correction, preserve the corrected organized note and update canonical knowledge.
 - If a change looks like removed text, infer cautiously. Deleting text from `10-notes/` is not automatically proof that canonical knowledge is false.
 - Keep the original language of the source note where possible.

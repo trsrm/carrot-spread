@@ -23,11 +23,20 @@ REQUIRED_FIELDS = [
     "related",
 ]
 
+PROVENANCE_REQUIRED_FIELDS = [
+    "origin",
+    "origin_note",
+]
+
+PROVENANCE_REQUIRED_PREFIXES = (
+    "10-notes/",
+    "20-knowledge/",
+)
+
 CANONICAL_PREFIXES = (
     "10-notes/",
     "20-knowledge/",
     "30-projects/",
-    "40-systems/",
 )
 
 SKIP_NAMES = {"README.md"}
@@ -84,7 +93,10 @@ def main() -> int:
         if fields is None:
             failures.append(f"{rel}: missing frontmatter")
             continue
-        missing = [field for field in REQUIRED_FIELDS if field not in fields]
+        required_fields = list(REQUIRED_FIELDS)
+        if any(rel.startswith(prefix) for prefix in PROVENANCE_REQUIRED_PREFIXES):
+            required_fields.extend(PROVENANCE_REQUIRED_FIELDS)
+        missing = [field for field in required_fields if field not in fields]
         if missing:
             failures.append(f"{rel}: missing fields: {', '.join(missing)}")
 

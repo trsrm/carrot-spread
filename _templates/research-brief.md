@@ -4,6 +4,8 @@ type: research
 domain: general
 status: draft
 source: []
+origin: mixed
+origin_note: "My planning notes with references"
 confidence: medium
 sensitivity: medium
 created: YYYY-MM-DD

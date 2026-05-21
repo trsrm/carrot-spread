@@ -4,6 +4,8 @@ type: decision
 domain: general
 status: active
 source: []
+origin: personal
+origin_note: "My decision note"
 confidence: medium
 sensitivity: medium
 created: YYYY-MM-DD

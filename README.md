@@ -44,6 +44,7 @@ Use `.agents/skills/` for task-specific procedures:
 - `brain-process-notes` — reconcile recent or uncommitted edits in `10-notes/`.
 - `brain-maintain-knowledge` — update, reconcile, source-check, deduplicate, lint durable knowledge pages, and conservatively surface cleanup or archive candidates.
 - `brain-weekly-review` — review recent changes, open questions, and next actions.
+- `brain-add-person` — create or update people profiles in `20-knowledge/people/`, asking useful template-shaped questions and preserving detailed source notes in `10-notes/people/`.
 
 Guidance skills use two roles:
 

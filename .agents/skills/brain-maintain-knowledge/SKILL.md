@@ -70,6 +70,7 @@ Look for:
 - orphan pages
 - missing backlinks
 - missing source references
+- missing provenance fields or mismatches
 - unresolved questions
 - plain path file references
 - mismatches between file path, frontmatter `domain`, source-folder category, and durable subject
@@ -78,6 +79,7 @@ Look for:
 
 - Fix broken or stale links, missing backlinks, index gaps, and plain filesystem path references.
 - Convert metadata file references to quoted Obsidian wikilinks.
+- Add or repair provenance frontmatter when the correct value is clear from the source context.
 - Use generated artifacts such as orphan reports as hints, not canonical truth.
 - Update navigation only when it improves findability.
 

@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.5 (2026-05-21)
+
+- Added provenance metadata guidance for `origin: personal | external | mixed` and `origin_note` across `10-notes/` and `20-knowledge/`.
+- Updated note and knowledge templates to include provenance fields, including clearer source-note origin prompts.
+- Added the new `brain-add-person` skill for creating or updating people profiles while preserving detailed source notes and interaction logs.
+- Refreshed person-profile handling and removed the separate `person-intake` template in favor of the richer canonical person template.
+
 ## v0.4 (2026-05-19)
 
 - Added domain placement auditing to `brain-maintain-knowledge` so maintenance checks path, frontmatter domain, source-folder category, title, tags, and index ownership as independent signals.

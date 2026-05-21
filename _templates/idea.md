@@ -4,6 +4,8 @@ type: idea
 domain: general
 status: draft
 source: []
+origin: personal
+origin_note: "My original idea"
 confidence: low
 sensitivity: medium
 created: YYYY-MM-DD

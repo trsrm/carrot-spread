@@ -42,6 +42,7 @@ DIRECTORIES = [
     ".agents/skills/brain-process-notes",
     ".agents/skills/brain-maintain-knowledge",
     ".agents/skills/brain-weekly-review",
+    ".agents/skills/brain-add-person",
     ".agents/skills/brain-activate-project",
     ".agents/skills/brain-refresh-research",
     ".agents/skills/brain-professional-coach",

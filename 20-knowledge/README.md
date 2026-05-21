@@ -2,6 +2,8 @@
 
 Durable, evolving, linked knowledge maintained by humans and agents.
 
+Canonical notes should include `origin: personal | external | mixed` and `origin_note`. `origin` marks the starting authorship of the knowledge; `origin_note` preserves the short reason, especially for mixed pages compiled from personal notes and outside sources.
+
 Start from `index.md`. The initial folders are intentionally simple:
 
 - `life/`

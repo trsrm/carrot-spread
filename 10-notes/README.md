@@ -8,6 +8,12 @@ Do not replace original human notes with lossy LLM summaries. When processing in
 
 Raw source-of-record capture lives in `00-inbox/`; do not rewrite it during normal processing unless the human explicitly asks.
 
+## Provenance
+
+Notes here should include `origin: personal | external | mixed` and `origin_note`. `origin` answers whose thought or authorship the material started from; `origin_note` gives the short explanation.
+
+Examples: `origin: personal` for Taras's own memory or reflection, `origin: external` for a book/article/course/recipe digest, and `origin: mixed` when personal interpretation and outside material both matter.
+
 ## Naming
 
 - Use short descriptive kebab-case filenames, for example `recipes/bbq-ribs.md`.

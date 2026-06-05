@@ -26,6 +26,7 @@ DOMAINS = [
     "food",
     "people",
     "ideas",
+    "legal",
     "ai",
     "general",
 ]

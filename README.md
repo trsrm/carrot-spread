@@ -28,7 +28,7 @@ Think of it as inspired by Andrew Karpathy’s LLM-oriented wiki idea, but shift
 You can also skip Graphify entirely and just ask the model directly — it reads your notes as context automatically. Then ask things like:
 
 - `"What's my current thinking on X?"` — the model searches your notes and synthesizes an answer
-- `"Run brain-decision-coach"` — prepare a decision packet for something you're weighing
+- `"Run brain-coach"` — describe a situation and let the coach route to the right lens
 - `"Run brain-risk-radar"` — surface stale, contradictory, or high-impact claims across your notes
 - `"Run brain-weekly-review"` — review recent changes, open questions, and next actions
 
@@ -45,16 +45,16 @@ Use `.agents/skills/` for task-specific procedures:
 - `brain-maintain-knowledge` — update, reconcile, source-check, deduplicate, lint durable knowledge pages, and conservatively surface cleanup or archive candidates.
 - `brain-weekly-review` — review recent changes, open questions, and next actions.
 - `brain-add-person` — create or update people profiles in `20-knowledge/people/`, asking useful template-shaped questions and preserving detailed source notes in `10-notes/people/`.
+- `brain-coach` — unified smart coach that routes to personal, professional, family, financial, health, decision, stuck, or custom coaching lenses.
 
 Guidance skills use two roles:
 
-- Coach skills help act on a known domain, situation, or decision.
+- `brain-coach` helps act on a known domain, situation, or decision.
 - Radar skills proactively detect hidden cross-domain issues.
 
 Current guidance skills:
 
-- `brain-personal-coach` — broad personal guidance, weekly priorities, proactive personal scans, patterns, and next actions.
-- `brain-health-coach`, `brain-financial-coach`, `brain-family-coach`, `brain-professional-coach`, and `brain-decision-coach` — domain-specific guidance.
+- `brain-coach` — unified coaching for personal, professional, family, financial, health, decision, stuck, blended, or custom situations.
 - `brain-risk-radar` — stale, sensitive, contradictory, high-impact, or unsafe-to-act-on claims across domains.
 - `brain-project-radar` — notes that imply active projects but are not tracked in `30-projects`.
 

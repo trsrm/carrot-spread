@@ -15,6 +15,7 @@ Start from `index.md`. The initial folders are intentionally simple:
 - `people/`
 - `ideas/`
 - `food/`
+- `legal/`
 - `systems/`
 
 Agents may create additional top-level folders when the current categories become too broad or a new area becomes durable enough to deserve its own home. Keep names plain, lowercase, and human-readable.

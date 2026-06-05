@@ -43,12 +43,13 @@ Convert raw captured material into durable, linked knowledge with minimal human 
    - stale, contradictory, or time-sensitive claims
    - proposed canonical note updates
    - affected people profiles and whether they need concise updates
-4. Create or update organized material in `10-notes/` by preserving the captured content nearly as-is.
+4. Create or update organized material in `10-notes/` by preserving the captured content nearly as-is, except for meeting/call/recording/transcript captures.
    - Use short descriptive kebab-case filenames.
    - Do not add leading date prefixes to source filenames.
    - Preserve the human's wording, examples, and context as much as practical.
    - Light cleanup is allowed: structure, formatting, minor spelling fixes, broken Markdown, metadata, backlinks, and short agent notes that flag clear issues.
    - Do not rewrite captured content into LLM prose and do not replace it with a summary.
+   - For meeting/call/recording/transcript captures, follow the meeting compression rules below instead of copying the full raw record into `10-notes/`.
    - Preserve capture/import dates in frontmatter, inbox processed markers, and the knowledge log.
 5. Search existing canonical notes before creating new pages.
 6. Update existing notes when possible.
@@ -69,6 +70,18 @@ Convert raw captured material into durable, linked knowledge with minimal human 
 - Prefer updating existing knowledge/project/system notes over creating new pages.
 - If destination is unclear after a reasonable search, add the item to `.generated/unresolved.md`.
 - Write canonical notes in the original language of the source material. If a source mixes languages, follow the dominant language and preserve key quoted terms as written.
+
+## Meeting compression judgment
+
+- Leave full meeting/call/recording/transcript records in `00-inbox/YYYY-MM/`; do not copy them verbatim into `10-notes/`.
+- Create one faithful compressed meeting note in `10-notes/` or the clearly implied project location.
+- Preserve substantive facts, decisions, nuances, context, assumptions, risks, constraints, open questions, commitments, useful side topics, etc.
+- Remove greetings, repetition, filler, false starts, meaningless self-corrections, over-explaining, etc.
+- Let sections emerge from the meeting topics; do not force a fixed template.
+- Consolidate scattered decisions and action items without losing context.
+- Use light speaker/timestamp refs only when useful for verifying important nuance, decisions, ambiguity, or high-impact facts.
+- Link to the raw inbox file with a quoted Obsidian wikilink; do not use traversal paths.
+- Keep sensitivity at least as high as the raw source.
 
 ## Metadata judgment
 

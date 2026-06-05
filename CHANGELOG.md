@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.6 (2026-06-05)
+
+- Replaced the individual domain coach skills with the unified `brain-coach` skill for personal, professional, family, financial, health, decision, stuck, blended, and custom coaching sessions.
+- Added `.claude/skills/` thin wrappers and `CLAUDE.md` so Claude Code can route to the canonical `.agents/skills/` workflows.
+- Updated `brain-process-inbox` with meeting/call/recording/transcript compression rules that preserve raw captures in `00-inbox/` while creating faithful compressed notes.
+
 ## v0.5 (2026-05-21)
 
 - Added provenance metadata guidance for `origin: personal | external | mixed` and `origin_note` across `10-notes/` and `20-knowledge/`.
